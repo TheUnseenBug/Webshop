@@ -1,4 +1,5 @@
 import ProductListItem from "@/components/productListItem";
+import Searchbar from "@/components/searchbar";
 import React from "react";
 
 const index = () => {
@@ -60,6 +61,13 @@ const index = () => {
   ];
   return (
     <div>
+      <div className="flex justify-center items-center gap-10 mt-10"> 
+      <h1>Beställ produkter online</h1>
+      <div>kategori</div>
+      <div>
+        <Searchbar />
+      </div>
+      </div>
       <div className="grid grid-cols-3 justify-center items-center px-10">
         {produce.map((p, i) => (
           <ProductListItem key={i} produce={p} />

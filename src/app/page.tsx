@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="flex justify-center items-center pt-5 gap-4">
         <div className="cursor-pointer">Om oss</div>
-        <div className="cursor-pointer">Våra produkter</div>
+        <Link className="cursor-pointer" href="/products">Våra produkter</Link>
       </div>
       <picture className="w-full justify-center items-center flex pt-5">
         <img
