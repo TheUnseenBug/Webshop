@@ -1,6 +1,5 @@
 import ProductListItem from "@/components/productListItem";
 import Searchbar from "@/components/searchbar";
-import React from "react";
 
 const index = () => {
   const produce = [
