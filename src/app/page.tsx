@@ -72,6 +72,40 @@ export default function Home() {
             (cherry/plum/tomat/tros), zucchinni.
           </p>
         </div>
+        <div className="px-10">
+          <h1 className="text-3xl font-semibold py-5">Följ oss på facebook</h1>
+          <p className="text-lg font-medium">
+            Vi odlar ekologiskt och sälja KRAV-märkta grönsaker. En giftfri
+            odling med största möjliga hänsyn till naturen för att uppnå ett
+            hållbart samhälle är ett självklart val för oss! Vad innebär
+            ekologisk produktion -EU och KRAV • giftfritt -utan kemiska
+            bekämpningsmedel • generellt mindre växtnäringsförluster (kväve och
+            fosfor) • cirkulerande växtföljd Produkter som är ekologiska och är
+            märkta med EU.s logotyp uppfyller bestämmelserna i EU:s ekologiska
+            förordning. Om produkter är ekologiska och dessutom KRAV-certifierat
+            bevisar att certifieringsorganet är svenskt. KRAV kontrollerar
+            årligen att reglerna efterlevs. I jämförelse med EUs minimiregler
+            för ekologisk produktion så har KRAV mer långtgående regler. KRAV
+            har även regler för klimat och social hänsyn. Det har inte
+            EU-ekologiskt. KRAV:s kriterier omfattar bl.a. förbud mot kemiska
+            bekämpningsmedel och konstgödsel. Regler kring djurhållning,
+            tillsatser, tillverkningsmetoder, arbetsvillkor och sociala
+            förhållanden. Vilken sorter grönsaker? På vår gård börjar säsongen
+            ungefär i april. Vi får plantor direkt från leverantören och
+            planterar så snart det är möjligt. Det betyder att det inte får
+            finnas risk för nattfrost runt -5 grader. Om vädret tillåter kördar
+            vi i början av juni. Vi kommer att ha färsk potatis, mangold,
+            rabarber, rädisor, sallad (salanova, lollo bionda/rosso), salladslök
+            och söckerärtor. Runt juli/augusti kommer vi också att erbjuda betor
+            (gul,polka,röd), brytbönor, brusselkål, frilandsgurka, olika
+            kålsorter (blomkål, broccoli, kålrabbi, kinakål, majrova, paksoj,
+            palmkål, rödkål, savojkål, spetskål, vitkål, fänkål),
+            gul/röd/schalottenlök, majs (sockermajs), morötter, potatis
+            (Acoustic/Melody) pumpa (butternut /uchiki kuri), purjolök, sallad
+            (lollo bionda/rosso), sockerärtor, sötpotatis, tomator
+            (cherry/plum/tomat/tros), zucchinni.
+          </p>
+        </div>
     </div>
   );
 }
