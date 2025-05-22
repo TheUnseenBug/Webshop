@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -36,11 +38,15 @@ const Navbar = () => {
         </div>
       </div>
       <picture className="flex justify-center">
-        <img
-        className="w-1/3"
+        <Link href={'/'}>
+        <Image
+          width={160}
+          height={160}
           src="/images/logo.webp"
           alt="logo"
         />
+        </Link>
+        
       </picture>
       <div className="flex gap-4 justify-end">
         <div className="flex flex-row items-center gap-2 cursor-pointer">

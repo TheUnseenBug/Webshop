@@ -3,6 +3,9 @@ import Navbar from "../components/navbar";
 import Link from "next/link";
 
 export default function Home() {
+  fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
   return (
     <div>
       <div className="flex justify-center items-center pt-5 gap-4">

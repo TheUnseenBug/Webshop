@@ -1,26 +1,53 @@
+"use client";
 import Produce from "@/types";
 import { FC } from "react";
 import { create } from "zustand";
 
-
-
 type Props = {
-  produce: Produce
+  produce: Produce;
 };
 
+type Store = {
+  cart: {
+    amount: number,
+    name: string,
+    image: string,
+    price: number,
+    id: string
+  } | undefined;
+  addToCart: (produce:Produce) => void;
+  increaseCart: () => void;
+  decreaseCart: () => void;
+  removeFromCart: () => void;
+  
+}
+
 const ProductListItem: FC<Props> = ({ produce }) => {
-
-  const useStore = create((set) => ({
+  const useStore = create<Store>((set) => ({
+    cart: undefined,
     //Adds new item to cart with all its properties
-    addToCart: () => set((produce:Produce) => ({ cart: {amount: 1, name:produce.name, image:produce.image, price:produce.price, id:produce.id  } })),
+    addToCart: (produce:Produce) =>
+      set(() => ({
+        cart: {
+          amount: 1,
+          name: produce.name,
+          image: produce.image,
+          price: produce.price,
+          id: produce.id,
+        },
+      })),
     //Increases amount of produce in the cart
-    increaseCart: () => set((state:number) => ({ cart: {amount: state + 1} })),
+    increaseCart: () =>
+      set((state: number) => ({ cart: { amount: state + 1 } })),
     //Decreases amount of produce in the cart
-    DecreaseCart: () => set((state:number) => ({ cart: {amount: state - 1} })),
+    decreaseCart: () =>
+      set((state: number) => ({ cart: { amount: state - 1 } })),
     //Removes selected item from cart
-    RemoveFromCart: () => set(() => ({ cart: {amount: undefined} })),
-  }))
-
+    removeFromCart: () => set(() => ({ cart: { amount: undefined } })),
+  }));
+  const { cart, addToCart, increaseCart, decreaseCart, removeFromCart } =
+    useStore();
+  console.log(cart);
   return (
     <div className="mx-4">
       <picture>
@@ -30,6 +57,19 @@ const ProductListItem: FC<Props> = ({ produce }) => {
         <p>{produce.name}</p>
         <p>{produce.price} kr per styck </p>
       </div>
+      <button
+        type="button"
+        className="rounded bg-indigo-600 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        -
+      </button>
+      <button
+        type="button"
+        className="rounded bg-indigo-600 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        onClick={() => {  addToCart(produce)}}
+      >
+        +
+      </button>
     </div>
   );
 };

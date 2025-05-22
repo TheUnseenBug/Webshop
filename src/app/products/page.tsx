@@ -8,54 +8,63 @@ const index = () => {
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
     {
       name: "apple",
       price: "10",
       image:
         "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        id: 1
     },
   ];
   return (
